@@ -1,0 +1,23 @@
+<div class="container d-flex justify-content-center">
+  <div class="card p-4 shadow-sm">
+    <h1 class="text-center mb-4">Bienvenido</h1>
+    <table class="table-bordered">
+      <thead>
+        <tr>
+          <th>idCubo</th>
+          <th>numPedido</th>
+          <th>idUsuario</th>
+        </tr>
+      </thead>
+      <tbody>
+        @for(compra of compras; track compra){
+        <tr>
+          <td>{{compra.idCubo}}</td>
+          <td>{{compra.idPedido}}</td>
+          <td>{{compra.idUsuario}}</td>
+        </tr>
+        }
+      </tbody>
+    </table>
+  </div>
+</div>

@@ -1,0 +1,11 @@
+<div class="container d-flex justify-content-center">
+  <div class="card p-4 shadow-sm">
+    <h1 class="text-center mb-4">Bienvenido</h1>
+    <select name="" id="" #selectId>
+      @for(cubo of cubos; track cubo){
+        <option value="{{cubo.idCubo}}">{{cubo.nombre}}</option>
+      }
+    </select>
+    <button (click)="comprar()">hacer pedido</button>
+  </div>
+</div>
